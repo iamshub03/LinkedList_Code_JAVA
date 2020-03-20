@@ -45,13 +45,6 @@ class Test20
 			temp=temp.next;
 		}
 	}
-	public static void reverse()
-	{
-		Node tp;
-		tp=head;
-		head=last;
-		last=tp;
-	}
 	public static void min_Max()
 	{
 		int min=head.values;
