@@ -1,5 +1,6 @@
 //create an automated linked list and 
 //display it
+//min and max values
 import java.util.*;
 class Node{
 	int values;
@@ -44,6 +45,32 @@ class Test20
 			temp=temp.next;
 		}
 	}
+	public static void reverse()
+	{
+		Node tp;
+		tp=head;
+		head=last;
+		last=tp;
+	}
+	public static void min_Max()
+	{
+		int min=head.values;
+		int max=head.values;
+		Node tp=head;
+		while(tp!=null)
+		{
+			if(min>tp.values)
+			{
+				min=tp.values;
+			}
+			if(max<tp.values)
+			{
+				max=tp.values;
+			}
+			tp=tp.next;
+		}
+		System.out.print("\nMin:" +min+ ", Max:" +max);
+	}
 	public static void main(String[] args)
 	{
 		Scanner in= new Scanner(System.in);
@@ -56,5 +83,6 @@ class Test20
 		d=in.nextInt();
 		}
 		display();
+		min_Max();
 	}
 }
