@@ -47,7 +47,6 @@ class Test20
 	public static void main(String[] args)
 	{
 		Scanner in= new Scanner(System.in);
-		//int[] a={1,2,3,4,5,6,7,8,9};
 		System.out.print("Press 1 for new node, 0 to exit:");
 		int d=in.nextInt();
 		while(d==1)
